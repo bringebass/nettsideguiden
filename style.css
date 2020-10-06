@@ -66,8 +66,10 @@
     height: auto;
     grid-template-areas: "one two three four";
     -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
--moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    border-top: #F8F8FF solid 40px;
+    position: relative;
    
 }
 
@@ -80,7 +82,8 @@ box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
 .chamber-one {
     grid-area: one;
     position: relative;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   
 }
 
@@ -92,6 +95,10 @@ box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
 
 .chamber-three {
     grid-area: three;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .chamber-four {
@@ -291,13 +298,13 @@ box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
 .ting {
     font-size: 20px;
     margin-left: 5px;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 .buttons-chamber4 {
     text-decoration: none;
     color: white;
-    background-color: blue;
+    background-color: rgba(255, 13, 0, 0.977);
     padding: 10px;
     width: 200px;
     height: 50px;
@@ -315,9 +322,9 @@ box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 15px;
     color: black;
-    font-size: 14px;
+    font-size: 13px;
   
 }
 
@@ -366,7 +373,7 @@ box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     width: 50px;
     height: 40px;
     border-bottom-right-radius: 20px;
-    background-color: blue;
+    background-color: rgba(44, 44, 239, 0.882);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,10 +381,55 @@ box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     font-weight: bolder;
 }
 
-.wix {
-    margin-top: 20px;
+/* stjerner */
+
+.yellow {
+    color: gold; 
 }
 
+
+.wix {
+    margin-top: 10px;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.boksKarakterStjerne {
+    display: flex;
+  
+}
+
+.karakter {
+    margin-right: 5px;
+}
+
+.compatible {
+    margin-top: 10px;
+}
+
+.users {
+    margin-bottom: 10px;
+}
+
+.wwusers {
+   
+    font-weight: bold;
+    margin-bottom: 1px;
+}   
+
+.grå {
+    color: green;
+}
+
+.wixy {
+    position: absolute;
+    top: -30px;
+    left: 180px;
+    z-index: 2;
+    font-weight: bold;
+}
 
 /* hide/show dropdowns */
 

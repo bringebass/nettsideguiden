@@ -20,15 +20,15 @@ const ting = document.querySelector('.ting');
 
 /* Show dropdowns */
 
-function showDropdowns (c, b) {
+function showDropdowns (c, b, d) {
 c.addEventListener("click", () => {
     b.classList.toggle("show");
-    ting.classList.toggle("rotate");
+    d.classList.toggle("rotate");
 
 }
 )};
 
-showDropdowns (showDropdownFirstBox, DropdownFirstBox);
+showDropdowns (showDropdownFirstBox, DropdownFirstBox, ting);
 showDropdowns (showDropdownSecondBox, DropdownSecondBox);
 showDropdowns (showDropdownThirdBox, DropdownThirdBox);
 showDropdowns (showDropdownFourthBox, DropdownFourthBox);
