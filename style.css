@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: arial;
 }
 
 /* Header */
@@ -41,6 +42,12 @@
     padding-left: 70px;
 }
 
+.swollow {
+    color: grey;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* main boxes */
 
 .wrapper-around-main-boxes {
@@ -58,20 +65,29 @@
     display: grid;
     height: auto;
     grid-template-areas: "one two three four";
+    -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+-moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+   
 }
 
 .chamber-one, .chamber-two, .chamber-three, .chamber-four {
     width: 250px;
-    height: 200px;
-    border: solid red;
+    height: 160px;
+    display: flex;
 }
 
 .chamber-one {
     grid-area: one;
+    position: relative;
+    justify-content: center;
+  
 }
 
 .chamber-two {
     grid-area: two;
+    align-items: center;
+    justify-content: center;
 }
 
 .chamber-three {
@@ -80,7 +96,10 @@
 
 .chamber-four {
     grid-area: four;
+    flex-direction: column;
+    align-items: center;
 }
+
 /* dropdown first-box */
 
 .dropdown-first-box {
@@ -88,6 +107,9 @@
     height: auto;
     display: none;
     grid-template-areas: "one two three four";
+    border-left: solid lightgray 1px;
+    border-right: solid lightgray 1px;
+    border-bottom: solid lightgray 1px;
 }
 
 /* content first box */
@@ -264,8 +286,97 @@
     grid-template-areas: "one two three four";
 }
 
+/* buttons and arrows*/
 
+.ting {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
 
+.buttons-chamber4 {
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    -webkit-box-shadow: 0px 0px 23px -9px rgba(143,143,143,1);
+    -moz-box-shadow: 0px 0px 23px -9px rgba(143,143,143,1);
+    box-shadow: 0px 0px 23px -9px rgba(143,143,143,1);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.showDropdownFirstBox {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    font-size: 14px;
+  
+}
+
+/* Symboler og tekst i chamber to første boks */
+
+.symbolboks {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 25px;
+}
+
+.tekstboks5 {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 10px;
+}
+    
+.text {
+    line-height: 1.35 ;
+}
+
+.symbol {
+    padding-top: 5px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* Rangeringsmerke i chamber one */
+
+.rangering {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    border-bottom-right-radius: 20px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.wix {
+    margin-top: 20px;
+}
 
 
 /* hide/show dropdowns */
@@ -289,5 +400,7 @@
                              "two"
                              "three"
                              "four";
+    
+        width: 300px;
     }
   }

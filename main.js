@@ -11,13 +11,19 @@ const DropdownFourthBox = document.querySelector('.dropdown-fourth-box');
 const showDropdownFiftBox = document.querySelector('.showDropdownFiftBox');
 const DropdownFiftBox = document.querySelector('.dropdown-fift-box');
 
+
+const ting = document.querySelector('.ting');
+
 /*test*/
+
+
 
 /* Show dropdowns */
 
 function showDropdowns (c, b) {
 c.addEventListener("click", () => {
     b.classList.toggle("show");
+    ting.classList.toggle("rotate");
 
 }
 )};
