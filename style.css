@@ -5,6 +5,24 @@
     font-family: arial;
 }
 
+/* Colors */
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: gold; 
+}
+
+.grå {
+    color: grey;
+}
+
 /* Header */
 
 .header {
@@ -59,43 +77,50 @@
     height: 1000vh;
 }
 
-/* first box */
-
-.first-box {
+.first-box, .second-box, .third-box, .fourth-box, .fift-box {
     width: auto;
     display: grid;
-    height: auto;
     grid-template-areas: "one two three four";
+    height: auto;
+    margin-top: 30px;
     -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     border-top: #F8F8FF solid 40px;
     position: relative;
-   
 }
 
-.chamber-one, .chamber-two, .chamber-three, .chamber-four, .chamber-one-secondbox, .chamber-two-secondbox, .chamber-three-secondbox, .chamber-four-secondbox, .chamber-one-thirdbox, .chamber-two-thirdbox, .chamber-three-thirdbox, .chamber-four-thirdbox  {
+.wixy {
+    position: absolute;
+    top: -30px;
+    left: 180px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+/* Chambers in boxes */
+
+.chamber-one, .chamber-two, .chamber-three, .chamber-four, .chamber-one-secondbox, .chamber-two-secondbox, .chamber-three-secondbox, .chamber-four-secondbox, .chamber-one-thirdbox, .chamber-two-thirdbox, .chamber-three-thirdbox, .chamber-four-thirdbox, .chamber-one-fourthbox, .chamber-two-fourthbox, .chamber-three-fourthbox, .chamber-four-fourthbox, .chamber-one-fiftbox, .chamber-two-fiftbox, .chamber-three-fiftbox, .chamber-four-fiftbox  {
     width: 250px;
     height: 180px;
     display: flex;
 }
 
-.chamber-one, .chamber-one-secondbox, .chamber-one-thirdbox {
+.chamber-one, .chamber-one-secondbox, .chamber-one-thirdbox, .chamber-one-fourthbox, .chamber-one-fiftbox {
     grid-area: one;
     position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
 }
 
-.chamber-two, .chamber-two-secondbox, .chamber-two-thirdbox {
+.chamber-two, .chamber-two-secondbox, .chamber-two-thirdbox, .chamber-two-fourthbox, .chamber-two-fiftbox {
     grid-area: two;
     align-items: center;
     justify-content: center;
 }
 
-.chamber-three, .chamber-three-secondbox, .chamber-three-thirdbox {
+.chamber-three, .chamber-three-secondbox, .chamber-three-thirdbox, .chamber-three-fourthbox, .chamber-three-fiftbox {
     grid-area: three;
     display: flex;
     flex-direction: column;
@@ -103,7 +128,7 @@
     justify-content: center;
 }
 
-.chamber-four, .chamber-four-secondbox, .chamber-four-thirdbox {
+.chamber-four, .chamber-four-secondbox, .chamber-four-thirdbox, .chamber-four-fourthbox, .chamber-four-fiftbox  {
     grid-area: four;
     flex-direction: column;
     align-items: center;
@@ -111,9 +136,9 @@
     position: relative;
 }
 
-/* dropdown first-box */
+/* Dropdowns from main boxes */
 
-.dropdown-first-box, .dropdown-second-box {
+.dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box  {
     width: auto;
     max-width: 1000px;
     height: 600px;
@@ -132,162 +157,74 @@
     margin-top: 30px;
 }
 
+/* Content in chamber one */
 
-/* second box */
-
-.second-box {
-    width: auto;
-    display: grid;
-    grid-template-areas: "one two three four";
-    height: auto;
-    margin-top: 30px;
-    -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
--moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
-border-top: #F8F8FF solid 40px;
-position: relative;
+.rangering {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(44, 44, 239, 0.882);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
 }
 
-/* dropdown second box */
+/* Content in chamber two */
 
-
-
-/* content second box */
-
-
-/* third box */
-
-.third-box {
-    width: auto;
-    display: grid;
-    height: auto;
-    margin-top: 30px;
-    grid-template-areas: "one two three four";
-    -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
-    -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
-    box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
-    border-top: #F8F8FF solid 40px;
-    position: relative;
+.symbolboks {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 25px;
 }
 
-
-
-
-
-
-.chamber-one-thirdbox {
-    grid-area: one;
+.tekstboks5 {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-left: 10px;
 }
 
-.chamber-two-thirdbox {
-    grid-area: two;
+.text {
+    line-height: 1.35 ;
 }
 
-.chamber-three-thirdbox {
-    grid-area: three;
+.symbol {
+    padding-top: 5px;
 }
 
-.chamber-four-thirdbox {
-    grid-area: four;
+/* Content in chamber three */
+
+.users {
+    margin-bottom: 10px;
 }
 
-/* dropdown third box */
+.wwusers {
+   
+    font-weight: bold;
+    margin-bottom: 1px;
+}   
 
-.dropdown-third-box {
-    width: auto;
-    height: auto;
-    display: none;
-    grid-template-areas: "one two three four";
+.boksKarakterStjerne {
+    display: flex;
 }
 
-/* content third box */
-
-/* fourth box */
-
-.fourth-box {
-    width: auto;
-    display: grid;
-    height: auto;
-    margin-top: 30px;
-    grid-template-areas: "one two three four";
+.karakter {
+    margin-right: 5px;
 }
 
-.chamber-one-fourthbox, .chamber-two-fourthbox, .chamber-three-fourthbox, .chamber-four-fourthbox {
-    width: 250px;
-    height: 200px;
-    border: solid green;
+.compatible {
+    margin-top: 10px;
 }
 
-.chamber-one-fourthbox {
-    grid-area: one;
-}
+/* content in fourth chamber */
 
-.chamber-two-fourthbox {
-    grid-area: two;
-}
-
-.chamber-three-fourthbox {
-    grid-area: three;
-}
-
-.chamber-four-fourthbox {
-    grid-area: four;
-}
-
-/* dropdown fourth box */
-
-.dropdown-fourth-box {
-    width: auto;
-    height: auto;
-    display: none;
-    grid-template-areas: "one two three four";
-}
-
-
-/* fift box */
-
-.fift-box {
-    width: auto;
-    display: grid;
-    height: auto;
-    margin-top: 30px;
-    grid-template-areas: "one two three four";
-}
-
-.chamber-one-fiftbox, .chamber-two-fiftbox, .chamber-three-fiftbox, .chamber-four-fiftbox {
-    width: 250px;
-    height: 200px;
-    border: solid blue;
-}
-
-.chamber-one-fiftbox {
-    grid-area: one;
-}
-
-.chamber-two-fiftbox {
-    grid-area: two;
-}
-
-.chamber-three-fiftbox {
-    grid-area: three;
-}
-
-.chamber-four-fiftbox {
-    grid-area: four;
-}
-
-/* dropdown fift box */
-
-.dropdown-fift-box {
-    width: auto;
-    height: auto;
-    display: none;
-    grid-template-areas: "one two three four";
-}
-
-/* buttons and arrows*/
-
-.ting {
+.arrow1, .arrow2, .arrow3, .arrow4, .arrow5 {
     font-size: 20px;
     margin-left: 5px;
     margin-top: 2px;
@@ -309,7 +246,7 @@ position: relative;
     align-items: center;
 }
 
-.showDropdownFirstBox, .showDropdownSecondBox, .showDropdownThirdBox, .showDropdownFourthBox  {
+.showDropdownFirstBox, .showDropdownSecondBox, .showDropdownThirdBox, .showDropdownFourthBox, .showDropdownFiftBox  {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -317,107 +254,7 @@ position: relative;
     font-size: 13px;
     position: absolute;
     bottom: 30px;
-    cursor: pointer;
-  
-}
-
-/* Symboler og tekst i chamber to første boks */
-
-.symbolboks {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    margin-left: 25px;
-}
-
-.tekstboks5 {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    margin-left: 10px;
-}
-    
-.text {
-    line-height: 1.35 ;
-}
-
-.symbol {
-    padding-top: 5px;
-}
-
-.green {
-    color: green;
-}
-
-.red {
-    color: red;
-}
-
-.rotate {
-    transform: rotate(180deg);
-}
-
-/* Rangeringsmerke i chamber one */
-
-.rangering {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 50px;
-    height: 40px;
-    border-bottom-right-radius: 20px;
-    background-color: rgba(44, 44, 239, 0.882);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bolder;
-}
-
-/* stjerner */
-
-.yellow {
-    color: gold; 
-}
-
-
-.wix {
-    margin-top: 10px;
-}
-
-.boksKarakterStjerne {
-    display: flex;
-  
-}
-
-.karakter {
-    margin-right: 5px;
-}
-
-.compatible {
-    margin-top: 10px;
-}
-
-.users {
-    margin-bottom: 10px;
-}
-
-.wwusers {
-   
-    font-weight: bold;
-    margin-bottom: 1px;
-}   
-
-.grå {
-    color: green;
-}
-
-.wixy {
-    position: absolute;
-    top: -30px;
-    left: 180px;
-    z-index: 2;
-    font-weight: bold;
+    cursor: pointer;  
 }
 
 .toppvalg {
@@ -440,8 +277,11 @@ position: relative;
     padding: 7px;
 }
 
-
-/* hide/show dropdowns */
+/* Toggle classes */
+    
+.rotate {
+    transform: rotate(180deg);
+}
 
 .show {
     display: block;
