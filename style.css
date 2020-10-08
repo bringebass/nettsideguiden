@@ -73,13 +73,13 @@
    
 }
 
-.chamber-one, .chamber-two, .chamber-three, .chamber-four, .chamber-one-secondbox, .chamber-two-secondbox, .chamber-three-secondbox, .chamber-four-secondbox  {
+.chamber-one, .chamber-two, .chamber-three, .chamber-four, .chamber-one-secondbox, .chamber-two-secondbox, .chamber-three-secondbox, .chamber-four-secondbox, .chamber-one-thirdbox, .chamber-two-thirdbox, .chamber-three-thirdbox, .chamber-four-thirdbox  {
     width: 250px;
     height: 180px;
     display: flex;
 }
 
-.chamber-one, .chamber-one-secondbox {
+.chamber-one, .chamber-one-secondbox, .chamber-one-thirdbox {
     grid-area: one;
     position: relative;
     flex-direction: column;
@@ -88,13 +88,13 @@
   
 }
 
-.chamber-two, .chamber-two-secondbox {
+.chamber-two, .chamber-two-secondbox, .chamber-two-thirdbox {
     grid-area: two;
     align-items: center;
     justify-content: center;
 }
 
-.chamber-three, .chamber-three-secondbox {
+.chamber-three, .chamber-three-secondbox, .chamber-three-thirdbox {
     grid-area: three;
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@
     justify-content: center;
 }
 
-.chamber-four, .chamber-four-secondbox {
+.chamber-four, .chamber-four-secondbox, .chamber-four-thirdbox {
     grid-area: four;
     flex-direction: column;
     align-items: center;
@@ -161,13 +161,17 @@ position: relative;
     height: auto;
     margin-top: 30px;
     grid-template-areas: "one two three four";
+    -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    border-top: #F8F8FF solid 40px;
+    position: relative;
 }
 
-.chamber-one-thirdbox, .chamber-two-thirdbox, .chamber-three-thirdbox, .chamber-four-thirdbox {
-    width: 250px;
-    height: 200px;
-    border: solid pink;
-}
+
+
+
+
 
 .chamber-one-thirdbox {
     grid-area: one;
@@ -303,7 +307,7 @@ position: relative;
     align-items: center;
 }
 
-.showDropdownFirstBox {
+.showDropdownFirstBox, .showDropdownSecondBox, .showDropdownThirdBox, .showDropdownFourthBox  {
     display: flex;
     align-items: center;
     text-decoration: none;
