@@ -60,7 +60,7 @@
 
 /* first box */
 
-.first-box, .second-box {
+.first-box {
     width: auto;
     display: grid;
     height: auto;
@@ -73,27 +73,28 @@
    
 }
 
-.chamber-one, .chamber-two, .chamber-three, .chamber-four {
+.chamber-one, .chamber-two, .chamber-three, .chamber-four, .chamber-one-secondbox, .chamber-two-secondbox, .chamber-three-secondbox, .chamber-four-secondbox  {
     width: 250px;
     height: 180px;
     display: flex;
 }
 
-.chamber-one {
+.chamber-one, .chamber-one-secondbox {
     grid-area: one;
     position: relative;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   
 }
 
-.chamber-two {
+.chamber-two, .chamber-two-secondbox {
     grid-area: two;
     align-items: center;
     justify-content: center;
 }
 
-.chamber-three {
+.chamber-three, .chamber-three-secondbox {
     grid-area: three;
     display: flex;
     flex-direction: column;
@@ -101,7 +102,7 @@
     justify-content: center;
 }
 
-.chamber-four {
+.chamber-four, .chamber-four-secondbox {
     grid-area: four;
     flex-direction: column;
     align-items: center;
@@ -133,27 +134,11 @@
     grid-template-areas: "one two three four";
     height: auto;
     margin-top: 30px;
-}
-
-.chamber-one-secondbox, .chamber-two-secondbox, .chamber-three-secondbox, .chamber-four-secondbox {
-    width: 250px;
-    height: 200px;
-}
-
-.chamber-one-secondbox {
-    grid-area: one;
-}
-
-.chamber-two-secondbox {
-    grid-area: two;
-}
-
-.chamber-three-secondbox {
-    grid-area: three;
-}
-
-.chamber-four-secondbox {
-    grid-area: four;
+    -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+-moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+border-top: #F8F8FF solid 40px;
+position: relative;
 }
 
 /* dropdown second box */
@@ -393,10 +378,6 @@
     margin-top: 10px;
 }
 
-.logo {
-    margin-top: 30px;
-}
-
 .boksKarakterStjerne {
     display: flex;
   
@@ -430,6 +411,15 @@
     left: 180px;
     z-index: 2;
     font-weight: bold;
+}
+
+.toppvalg {
+    position: absolute;
+    top: 18px;
+    font-weight: bold;
+    border: solid 1px black;
+    border-radius: 40px;
+    padding: 5px;
 }
 
 /* hide/show dropdowns */
