@@ -5,6 +5,9 @@
     font-family: arial;
 }
 
+
+
+
 /* Colors */
 
 .green {
@@ -86,14 +89,14 @@
     -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
-    border-top: #F8F8FF solid 40px;
+    border-top: #F8F8FF solid 50px;
     position: relative;
 }
 
-.wixy {
+.border-text {
     position: absolute;
-    top: -30px;
-    left: 180px;
+    top: -33px;
+    left: 390px;
     z-index: 2;
     font-weight: bold;
 }
@@ -161,10 +164,10 @@
 
 .rangering {
     position: absolute;
-    top: -40px;
+    top: -50px;
     left: 0;
     width: 50px;
-    height: 40px;
+    height: 50px;
     border-bottom-right-radius: 20px;
     background-color: rgba(44, 44, 239, 0.882);
     display: flex;
@@ -294,6 +297,24 @@
         grid-template-areas: "one two"
                              "three four";
     }
+    
+    .border-text {
+        left: 140px;
+    }
+
+    .chamber-one {
+        border-bottom: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+    }
+
+    .chamber-two {
+        border-bottom: 1px solid lightgray;
+    }
+
+    .chamber-three {
+        border-right: 1px solid lightgray;
+    }
+
   }
 
   @media only screen and (max-width: 530px) {
@@ -303,6 +324,23 @@
                              "three"
                              "four";
     
-        width: 300px;
+        width: 80%;
+        max-width: 380px;
     }
+
+    .chamber-one, .chamber-two, .chamber-three {
+        border-bottom: solid lightgrey 1px;
+        width: auto;
+    }
+
+    .chamber-four {
+        width: auto;
+    }
+
+    .border-text {
+        left: 60px;
+        top: -43px;
+
+    }
+
   }
