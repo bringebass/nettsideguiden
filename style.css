@@ -96,7 +96,7 @@
 .border-text {
     position: absolute;
     top: -33px;
-    left: 390px;
+    left: 320px;
     z-index: 2;
     font-weight: bold;
 }
@@ -225,6 +225,10 @@
     margin-top: 10px;
 }
 
+.testings {
+    padding-right: 5px;
+}
+
 /* content in fourth chamber */
 
 .arrow1, .arrow2, .arrow3, .arrow4, .arrow5 {
@@ -269,17 +273,6 @@
     padding: 5px;
 }
 
-.toppvalg1 {
-    position: absolute;
-    top: 18px;
-    font-weight: bold;
-    border: solid 1px black;
-    background-color: blueviolet;
-    color: white;
-    border-radius: 40px;
-    padding: 7px;
-}
-
 /* Toggle classes */
     
 .rotate {
@@ -299,7 +292,7 @@
     }
     
     .border-text {
-        left: 140px;
+        left: 90px;
     }
 
     .chamber-one {
@@ -340,7 +333,7 @@
     .border-text {
         left: 60px;
         top: -43px;
-
     }
+
 
   }
