@@ -295,7 +295,7 @@
         left: 90px;
     }
 
-    .chamber-one {
+    .chamber-one, .chamber-two, .chamber-three, .chamber-four, .chamber-one-secondbox, .chamber-two-secondbox, .chamber-three-secondbox, .chamber-four-secondbox, .chamber-one-thirdbox, .chamber-two-thirdbox, .chamber-three-thirdbox, .chamber-four-thirdbox, .chamber-one-fourthbox, .chamber-two-fourthbox, .chamber-three-fourthbox, .chamber-four-fourthbox, .chamber-one-fiftbox, .chamber-two-fiftbox, .chamber-three-fiftbox, .chamber-four-fiftbox {
         border-bottom: 1px solid lightgray;
         border-right: 1px solid lightgray;
     }
@@ -306,6 +306,10 @@
 
     .chamber-three {
         border-right: 1px solid lightgray;
+    }
+
+    .dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box {
+        width: 500px;
     }
 
   }
@@ -321,7 +325,7 @@
         max-width: 380px;
     }
 
-    .chamber-one, .chamber-two, .chamber-three {
+    .chamber-one, .chamber-two, .chamber-three, .chamber-four, .chamber-one-secondbox, .chamber-two-secondbox, .chamber-three-secondbox, .chamber-four-secondbox, .chamber-one-thirdbox, .chamber-two-thirdbox, .chamber-three-thirdbox, .chamber-four-thirdbox, .chamber-one-fourthbox, .chamber-two-fourthbox, .chamber-three-fourthbox, .chamber-four-fourthbox, .chamber-one-fiftbox, .chamber-two-fiftbox, .chamber-three-fiftbox, .chamber-four-fiftbox {
         border-bottom: solid lightgrey 1px;
         width: auto;
     }
