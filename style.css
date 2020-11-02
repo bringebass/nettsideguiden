@@ -17,10 +17,10 @@
 .navigation-box {
     border: solid 1px black;
     height: 700px;
-    width: 500px;
+    width: 300px;
     position: sticky;
     display: grid;
-
+    margin-top: 50px;
     margin-left: 3%;
     top: 100px;
     z-index: 1;
@@ -35,7 +35,7 @@
 
 .banner-box {
     position: absolute;
-    top: 30%;
+    top: 20%;
     margin-left: 50%;
     margin-right: 5%;
 }
@@ -51,10 +51,10 @@
 }
 
 .headline-over-boxes {
-    margin-left: 59%;
-    margin-top: 48px;
+    margin-left: 52%;
     font-size: 30px;
     color: rgb(22, 33, 74);
+    margin-top: 20px;
 }
 
 /* Colors */
@@ -130,23 +130,12 @@
 /* main boxes */
 
 
-
-.wrapper-around-main-boxes {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-
 .first-box {
     width: 1000px;
     display: grid;
     grid-template-areas: "one two three four";
     height: auto;
-    margin-top: -680px;
+    margin-top: -700px;
     margin-left: 30%;
     -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
@@ -222,7 +211,7 @@
     width: auto;
     max-width: 1000px;
     height: 600px;
-    margin-left: 100px;
+    margin-left: 30%;
     display: none;
     border-left: solid lightgray 1px;
     border-right: solid lightgray 1px;
@@ -235,7 +224,7 @@
 
 .overskrift-i-dropdownbox {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 20px;
 }
 
 /* Content in chamber one */
@@ -378,7 +367,31 @@
 
 /* media quieries */
 
-@media only screen and (max-width: 1480px) {
+
+
+
+
+@media only screen and (max-width: 1465px) {
+    .first-box, .second-box, .third-box, .fourth-box, .fift-box {
+        margin-left: 25%;
+    }
+    
+    .navigation-box {
+        margin-left: 20px;
+    }
+
+    .banner-box {
+        top: 190px;
+    }
+
+    .dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box {
+        margin-left: 25%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1364px) {
     .first-box, .second-box, .third-box, .fourth-box, .fift-box, .dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box {
         grid-template-areas: "one two"
                              "three four";
@@ -386,8 +399,12 @@
     
     .first-box, .second-box, .third-box, .fourth-box, .fift-box {
         width: 500px;
+        margin-left: 45%;
     }
 
+    .headline-over-boxes {
+        margin-left: 57%;
+    }
 
     .border-text {
         left: 90px;
@@ -409,10 +426,11 @@
     .dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box {
         width: 500px;
     }
-
   }
 
-  @media only screen and (max-width: 530px) {
+  
+
+  @media only screen and (max-width: 960px) {
     .first-box, .second-box, .third-box, .fourth-box, .fift-box, .dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box {
         grid-template-areas: "one"
                              "two"
@@ -437,5 +455,30 @@
         top: -43px;
     }
 
+    .banner-box {
+        top: 100px;
+    }
+
+  }
+
+  @media only screen and (max-width: 770px) {
+      .navigation-box {
+          display: none;
+      }
+
+      .first-box {
+        margin-top: 100px;
+      }
+
+      .wrapper-around-main-boxes {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .first-box, .second-box, .third-box, .fourth-box, .fift-box {
+          margin-left: 0px;
+      }
 
   }
