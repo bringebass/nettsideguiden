@@ -5,8 +5,57 @@
     font-family: arial;
 }
 
+/* photos */
 
+.pc {
+    width: 100%;
+    margin-top: 50px;
+}
 
+/* navigation-box */
+
+.navigation-box {
+    border: solid 1px black;
+    height: 700px;
+    width: 500px;
+    position: sticky;
+    display: grid;
+
+    margin-left: 3%;
+    top: 100px;
+    z-index: 1;
+    background-color: white;
+}
+
+.box-one, .box-two, .box-three, .box-four {
+    width: 400px;
+}
+
+/* banner */
+
+.banner-box {
+    position: absolute;
+    top: 30%;
+    margin-left: 50%;
+    margin-right: 5%;
+}
+
+.stor_overskrift {
+    color: rgb(22, 33, 74);
+    font-size: 50px;
+}
+
+.liten_overskrift {
+    color: white;
+    margin-top: 10px;
+}
+
+.headline-over-boxes {
+    margin-left: 59%;
+    margin-top: 48px;
+    font-size: 30px;
+    color: rgb(22, 33, 74);
+}
 
 /* Colors */
 
@@ -32,7 +81,10 @@
     width: 100%;
     height: 50px;
     display: flex;
+    position: fixed;
     justify-content: space-between;
+    background-color: white;
+    z-index: 100;
     box-shadow: 10px 10px 32px -6px rgba(140,140,140,1);
     -moz-box-shadow: 10px 10px 32px -6px rgba(140,140,140,1);
     box-shadow: 10px 10px 32px -6px rgba(140,140,140,1);
@@ -63,29 +115,54 @@
     padding-left: 70px;
 }
 
-.swollow {
-    color: blue;
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
+.ikoner {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 200px;
+    color: grey;
+    font-size: 20px;
+}
+
+.fab {
+    padding-left: 10px;
 }
 
 /* main boxes */
+
+
 
 .wrapper-around-main-boxes {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1000vh;
 }
 
-.first-box, .second-box, .third-box, .fourth-box, .fift-box {
-    width: auto;
+
+
+
+.first-box {
+    width: 1000px;
     display: grid;
     grid-template-areas: "one two three four";
     height: auto;
-    margin-top: 30px;
+    margin-top: -680px;
+    margin-left: 30%;
+    -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
+    border-top: #F8F8FF solid 50px;
+    position: relative;
+
+}
+
+.second-box, .third-box, .fourth-box, .fift-box {
+    width: 1000px;
+    display: grid;
+    grid-template-areas: "one two three four";
+    height: auto;
+    margin-top: 20px;
+    margin-left: 30%;
     -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
@@ -145,6 +222,7 @@
     width: auto;
     max-width: 1000px;
     height: 600px;
+    margin-left: 100px;
     display: none;
     border-left: solid lightgray 1px;
     border-right: solid lightgray 1px;
@@ -169,7 +247,7 @@
     width: 50px;
     height: 50px;
     border-bottom-right-radius: 20px;
-    background-color: rgba(44, 44, 239, 0.882);
+    background-color: rgb(22, 33, 74);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,7 +318,7 @@
 .buttons-chamber4 {
     text-decoration: none;
     color: white;
-    background-color: rgba(255, 13, 0, 0.977);
+    background-color: #ff5e00;
     padding: 10px;
     width: 200px;
     height: 50px;
@@ -273,6 +351,21 @@
     padding: 5px;
 }
 
+/* table */
+
+.table {
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1200px;
+    height: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-collapse: collapse;  
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+
 /* Toggle classes */
     
 .rotate {
@@ -285,12 +378,17 @@
 
 /* media quieries */
 
-@media only screen and (max-width: 1021px) {
+@media only screen and (max-width: 1480px) {
     .first-box, .second-box, .third-box, .fourth-box, .fift-box, .dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box {
         grid-template-areas: "one two"
                              "three four";
     }
     
+    .first-box, .second-box, .third-box, .fourth-box, .fift-box {
+        width: 500px;
+    }
+
+
     .border-text {
         left: 90px;
     }
