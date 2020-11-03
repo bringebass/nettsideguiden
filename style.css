@@ -21,7 +21,7 @@
     width: 300px;
     position: sticky;
     display: grid;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 3%;
     top: 100px;
     z-index: 1;
@@ -53,12 +53,7 @@
     font-size: 1.4rem;
 }
 
-.headline-over-boxes {
-    margin-left: 52%;
-    font-size: 2rem;
-    color: rgb(22, 33, 74);
-    margin-top: 20px;
-}
+
 
 /* Colors */
 
@@ -138,14 +133,21 @@
     display: grid;
     grid-template-areas: "one two three four";
     height: auto;
-    margin-top: -700px;
+    margin-top: -650px;
     margin-left: 30%;
     -webkit-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     -moz-box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     box-shadow: 0px 0px 29px 1px rgba(143,143,143,1);
     border-top: #F8F8FF solid 50px;
     position: relative;
+}
 
+.testo {
+    position: absolute;
+    top: -130px;
+    left: 350px;
+    font-size: 1.5rem;
+    min-width: 354px;
 }
 
 .second-box, .third-box, .fourth-box, .fift-box {
@@ -371,7 +373,11 @@
 /* media quieries */
 
 
-
+@media only screen and (max-width: 1770px) {
+    .banner-box {
+        top: 250px;
+    }
+    }
 
 
 @media only screen and (max-width: 1465px) {
@@ -391,6 +397,7 @@
         margin-left: 25%;
     }
 
+    
 }
 
 
@@ -405,9 +412,10 @@
         margin-left: 45%;
     }
 
-    .headline-over-boxes {
-        margin-left: 57%;
+    .testo {
+        left: 85px
     }
+
 
     .border-text {
         left: 90px;
@@ -439,7 +447,7 @@
 
   @media only screen and (max-width: 960px) {
    * {
-       font-size: 12px;   
+       font-size: 15px;   
   }
     .first-box, .second-box, .third-box, .fourth-box, .fift-box, .dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box {
         grid-template-areas: "one"
@@ -468,6 +476,18 @@
     .banner-box {
         top: 120px;
     }
+    .stor_overskrift {
+        font-size: 2.5rem;
+    }
+
+    .liten_overskrift {
+        font-size: 1.3rem;
+    }
+
+    .testo {
+        left: 25px
+    }
+
   }
 }
 
@@ -483,7 +503,7 @@
       }
 
       .first-box {
-        margin-top: 100px;
+        margin-top: 50px;
       }
 
       .wrapper-around-main-boxes {
@@ -510,11 +530,23 @@
         font-size: 1.1rem;
     }
 
+    .testo {
+        top: -110px;
+    }
+
+    .ikoner {
+        margin-left: 5px;
+        margin-top: 2px;
+    
+    }
 }
 
 @media only screen and (max-width: 540px) {
     .banner-box {
         top: 80px;
     }
+
+   
+    
 
 }
