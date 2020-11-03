@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: arial;
+    font-size: 16px;
 }
 
 /* photos */
@@ -35,24 +36,26 @@
 
 .banner-box {
     position: absolute;
-    top: 20%;
+    top: 29%;
     margin-left: 50%;
     margin-right: 5%;
+    font-size: 1rem;
 }
 
 .stor_overskrift {
     color: rgb(22, 33, 74);
-    font-size: 50px;
+    font-size: 3.5rem;
 }
 
 .liten_overskrift {
     color: white;
     margin-top: 10px;
+    font-size: 1.4rem;
 }
 
 .headline-over-boxes {
     margin-left: 52%;
-    font-size: 30px;
+    font-size: 2rem;
     color: rgb(22, 33, 74);
     margin-top: 20px;
 }
@@ -429,9 +432,15 @@
     }
   }
 
-  
+  @media only screen and (max-width: 1150px) {
+    .banner-box {
+        top: 130px;
+    }
 
   @media only screen and (max-width: 960px) {
+   * {
+       font-size: 12px;   
+  }
     .first-box, .second-box, .third-box, .fourth-box, .fift-box, .dropdown-first-box, .dropdown-second-box, .dropdown-third-box, .dropdown-fourth-box, .dropdown-fift-box {
         grid-template-areas: "one"
                              "two"
@@ -457,16 +466,20 @@
     }
 
     .banner-box {
-        top: 100px;
+        top: 120px;
     }
-
-   
-
   }
+}
 
   @media only screen and (max-width: 770px) {
+
+
       .navigation-box {
           display: none;
+      }
+
+      .banner-box {
+        top: 100px;
       }
 
       .first-box {
@@ -488,5 +501,20 @@
         margin-left: 50%;
         margin-right: 50%;
     }
+    
+    .stor_overskrift {
+        font-size: 2rem;
+    }
+    
+    .liten_overskrift {
+        font-size: 1.1rem;
+    }
 
-  }
+}
+
+@media only screen and (max-width: 540px) {
+    .banner-box {
+        top: 80px;
+    }
+
+}
