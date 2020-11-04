@@ -115,14 +115,15 @@
 
 .ikoner {
     position: absolute;
-    margin-top: 30px;
-    margin-left: 110px;
+    margin-top: 5px;
+    margin-left: 5px;
     color: grey;
-    font-size: 20px;
 }
+
 
 .fab {
     padding-left: 10px;
+    font-size: 1.3rem;
 }
 
 /* main boxes */
@@ -145,7 +146,7 @@
 .testo {
     position: absolute;
     top: -130px;
-    left: 350px;
+    left: 325px;
     font-size: 1.5rem;
     min-width: 354px;
 }
@@ -413,7 +414,7 @@
     }
 
     .testo {
-        left: 85px
+        left: 80px
     }
 
 
@@ -485,7 +486,7 @@
     }
 
     .testo {
-        left: 25px
+        left: 25px;
     }
 
   }
@@ -532,16 +533,17 @@
 
     .testo {
         top: -110px;
+        font-size: 1.3rem;
+        left: 43px;
     }
 
-    .ikoner {
-        margin-left: 5px;
-        margin-top: 2px;
-    
+    .fab {
+        font-size: 1rem;
     }
+    
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
     .banner-box {
         top: 80px;
     }
